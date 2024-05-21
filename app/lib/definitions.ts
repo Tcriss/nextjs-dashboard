@@ -86,3 +86,19 @@ export type InvoiceForm = {
   amount: number;
   status: 'pending' | 'paid';
 };
+export type CardData = {
+  numberOfCustomers: number;
+  numberOfInvoices: number;
+  totalPaidInvoices: string;
+  totalPendingInvoices: string;
+}
+
+export type FilteredCustomer = {
+  total_pending: string;
+  total_paid: string;
+  id: string;
+  name: string;
+  email: string;
+  image_url: string;
+  total_invoices: number;
+}
